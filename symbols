@@ -40,6 +40,7 @@ libostree-1.so.1:LIBOSTREE_2021.3
 libostree-1.so.1:LIBOSTREE_2021.4
 libostree-1.so.1:LIBOSTREE_2021.5
 libostree-1.so.1:LIBOSTREE_2022.2
+libostree-1.so.1:LIBOSTREE_2022.4
 libostree-1.so.1:ostree_async_progress_copy_state
 libostree-1.so.1:ostree_async_progress_finish
 libostree-1.so.1:ostree_async_progress_get
@@ -144,6 +145,8 @@ libostree-1.so.1:ostree_diff_item_ref
 libostree-1.so.1:ostree_diff_item_unref
 libostree-1.so.1:ostree_diff_print
 libostree-1.so.1:ostree_fetcher_config_flags_get_type
+libostree-1.so.1:ostree_fs_get_all_xattrs
+libostree-1.so.1:ostree_fs_get_all_xattrs_at
 libostree-1.so.1:ostree_gpg_error_quark
 libostree-1.so.1:ostree_gpg_verify_result_count_all
 libostree-1.so.1:ostree_gpg_verify_result_count_valid
