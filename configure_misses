@@ -5,3 +5,4 @@ Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: grub-mkconfig
 Configure miss: grub2-mkconfig
 Configure miss: libselinux >= 2.1.13
+Configure miss: x86_64-generic-linux-gnu-file

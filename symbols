@@ -41,6 +41,7 @@ libostree-1.so.1:LIBOSTREE_2021.4
 libostree-1.so.1:LIBOSTREE_2021.5
 libostree-1.so.1:LIBOSTREE_2022.2
 libostree-1.so.1:LIBOSTREE_2022.4
+libostree-1.so.1:LIBOSTREE_2022.5
 libostree-1.so.1:ostree_async_progress_copy_state
 libostree-1.so.1:ostree_async_progress_finish
 libostree-1.so.1:ostree_async_progress_get
@@ -161,6 +162,7 @@ libostree-1.so.1:ostree_hash_object_name
 libostree-1.so.1:ostree_kernel_args_append
 libostree-1.so.1:ostree_kernel_args_append_argv
 libostree-1.so.1:ostree_kernel_args_append_argv_filtered
+libostree-1.so.1:ostree_kernel_args_append_if_missing
 libostree-1.so.1:ostree_kernel_args_append_proc_cmdline
 libostree-1.so.1:ostree_kernel_args_cleanup
 libostree-1.so.1:ostree_kernel_args_delete
@@ -445,6 +447,7 @@ libostree-1.so.1:ostree_sysroot_cleanup_prune_repo
 libostree-1.so.1:ostree_sysroot_deploy_tree
 libostree-1.so.1:ostree_sysroot_deploy_tree_with_options
 libostree-1.so.1:ostree_sysroot_deployment_set_kargs
+libostree-1.so.1:ostree_sysroot_deployment_set_kargs_in_place
 libostree-1.so.1:ostree_sysroot_deployment_set_mutable
 libostree-1.so.1:ostree_sysroot_deployment_set_pinned
 libostree-1.so.1:ostree_sysroot_deployment_unlock
