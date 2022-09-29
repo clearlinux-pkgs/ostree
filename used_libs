@@ -1,5 +1,6 @@
 libarchive.so.13
 libc.so.6
+libcurl.so.4
 libfuse3.so.3
 libgcc_s.so.1
 libgio-2.0.so.0
@@ -8,6 +9,5 @@ libgobject-2.0.so.0
 libgpg-error.so.0
 libgpgme.so.11
 liblzma.so.5
-libsoup-2.4.so.1
 libsystemd.so.0
 libz.so.1

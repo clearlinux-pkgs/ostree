@@ -4,7 +4,7 @@
 #
 Name     : ostree
 Version  : 2022.5
-Release  : 52
+Release  : 53
 URL      : https://github.com/ostreedev/ostree/releases/download/v2022.5/libostree-2022.5.tar.xz
 Source0  : https://github.com/ostreedev/ostree/releases/download/v2022.5/libostree-2022.5.tar.xz
 Summary  : Git for operating system binaries
@@ -43,7 +43,6 @@ BuildRequires : pkgconfig(libcurl)
 BuildRequires : pkgconfig(libgsystem)
 BuildRequires : pkgconfig(liblzma)
 BuildRequires : pkgconfig(libsodium)
-BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(libsystemd)
 BuildRequires : pkgconfig(zlib)
 BuildRequires : util-linux
@@ -162,13 +161,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1658870752
+export SOURCE_DATE_EPOCH=1664431156
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
 export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
-%configure --disable-static
+%configure --disable-static --with-curl \
+--without-soup
 make  %{?_smp_mflags}
 
 %check
@@ -184,7 +184,7 @@ export XDG_DATA_DIRS="$HOME/.local/share${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}"
 make VERBOSE=1 V=1 check || :
 
 %install
-export SOURCE_DATE_EPOCH=1658870752
+export SOURCE_DATE_EPOCH=1664431156
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ostree
 cp %{_builddir}/libostree-%{version}/COPYING %{buildroot}/usr/share/package-licenses/ostree/ba8966e2473a9969bdcab3dc82274c817cfd98a1
@@ -261,7 +261,6 @@ cp %{_builddir}/libostree-%{version}/libglnx/LICENSES/LGPL-2.1-or-later.txt %{bu
 %files libexec
 %defattr(-,root,root,-)
 /usr/libexec/libostree/grub2-15_ostree
-/usr/libexec/libostree/ostree-trivial-httpd
 /usr/libexec/libostree/s390x-se-luks-gencpio
 
 %files license
@@ -312,7 +311,6 @@ cp %{_builddir}/libostree-%{version}/libglnx/LICENSES/LGPL-2.1-or-later.txt %{bu
 /usr/share/man/man1/ostree-sign.1
 /usr/share/man/man1/ostree-static-delta.1
 /usr/share/man/man1/ostree-summary.1
-/usr/share/man/man1/ostree-trivial-httpd.1
 /usr/share/man/man1/ostree.1
 /usr/share/man/man1/rofiles-fuse.1
 /usr/share/man/man5/ostree.repo-config.5
