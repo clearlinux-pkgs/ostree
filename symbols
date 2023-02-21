@@ -43,6 +43,7 @@ libostree-1.so.1:LIBOSTREE_2022.2
 libostree-1.so.1:LIBOSTREE_2022.4
 libostree-1.so.1:LIBOSTREE_2022.5
 libostree-1.so.1:LIBOSTREE_2022.7
+libostree-1.so.1:LIBOSTREE_2023.1
 libostree-1.so.1:ostree_async_progress_copy_state
 libostree-1.so.1:ostree_async_progress_finish
 libostree-1.so.1:ostree_async_progress_get
@@ -347,6 +348,7 @@ libostree-1.so.1:ostree_repo_pull_with_options
 libostree-1.so.1:ostree_repo_query_object_storage_size
 libostree-1.so.1:ostree_repo_read_commit
 libostree-1.so.1:ostree_repo_read_commit_detached_metadata
+libostree-1.so.1:ostree_repo_regenerate_metadata
 libostree-1.so.1:ostree_repo_regenerate_summary
 libostree-1.so.1:ostree_repo_reload_config
 libostree-1.so.1:ostree_repo_remote_add

@@ -1,5 +1,4 @@
 Configure miss: -fsanitize=thread in CFLAGS
-Configure miss: OT_DEP_GPGME
 Configure miss: avahi-client >= 0.6.31 avahi-glib >= 0.6.31
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: grub-mkconfig
