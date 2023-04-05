@@ -13,3 +13,4 @@ libassuan-dev
 libcap-dev
 parallel
 util-linux
+pypi-pyaml
