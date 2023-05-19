@@ -1,7 +1,14 @@
 Configure miss: -fsanitize=thread in CFLAGS
+Configure miss: -fsanitize=thread in CFLAGS
+Configure miss: avahi-client >= 0.6.31 avahi-glib >= 0.6.31
 Configure miss: avahi-client >= 0.6.31 avahi-glib >= 0.6.31
 Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: grub-mkconfig
 Configure miss: grub-mkconfig
 Configure miss: grub2-mkconfig
+Configure miss: grub2-mkconfig
 Configure miss: libselinux >= 2.1.13
+Configure miss: libselinux >= 2.1.13
+Configure miss: x86_64-generic-linux-gnu-file
 Configure miss: x86_64-generic-linux-gnu-file
