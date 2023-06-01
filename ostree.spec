@@ -5,7 +5,7 @@
 #
 Name     : ostree
 Version  : 2023.3
-Release  : 58
+Release  : 59
 URL      : https://github.com/ostreedev/ostree/releases/download/v2023.3/libostree-2023.3.tar.xz
 Source0  : https://github.com/ostreedev/ostree/releases/download/v2023.3/libostree-2023.3.tar.xz
 Summary  : Git for operating system binaries
@@ -171,7 +171,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684512418
+export SOURCE_DATE_EPOCH=1685579574
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -208,7 +208,7 @@ export XDG_DATA_DIRS="$HOME/.local/share${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}"
 make %{?_smp_mflags} check || cat ./test-suite.log
 
 %install
-export SOURCE_DATE_EPOCH=1684512418
+export SOURCE_DATE_EPOCH=1685579574
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ostree
 cp %{_builddir}/libostree-%{version}/COPYING %{buildroot}/usr/share/package-licenses/ostree/ba8966e2473a9969bdcab3dc82274c817cfd98a1 || :
@@ -248,7 +248,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libostree-1.so
 /usr/include/ostree-1/ostree-async-progress.h
 /usr/include/ostree-1/ostree-autocleanups.h
 /usr/include/ostree-1/ostree-bootconfig-parser.h
@@ -289,7 +288,6 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libostree-1.so.1
 /V3/usr/lib64/libostree-1.so.1.0.0
 /usr/lib64/libostree-1.so.1
 /usr/lib64/libostree-1.so.1.0.0
