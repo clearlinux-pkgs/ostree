@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : ostree
-Version  : 2023.3
-Release  : 59
-URL      : https://github.com/ostreedev/ostree/releases/download/v2023.3/libostree-2023.3.tar.xz
-Source0  : https://github.com/ostreedev/ostree/releases/download/v2023.3/libostree-2023.3.tar.xz
+Version  : 2023.4
+Release  : 60
+URL      : https://github.com/ostreedev/ostree/releases/download/v2023.4/libostree-2023.4.tar.xz
+Source0  : https://github.com/ostreedev/ostree/releases/download/v2023.4/libostree-2023.4.tar.xz
 Summary  : Git for operating system binaries
 Group    : Development/Tools
 License  : BSD-2-Clause LGPL-2.0 LGPL-2.1
@@ -160,10 +160,10 @@ services components for the ostree package.
 
 
 %prep
-%setup -q -n libostree-2023.3
-cd %{_builddir}/libostree-2023.3
+%setup -q -n libostree-2023.4
+cd %{_builddir}/libostree-2023.4
 pushd ..
-cp -a libostree-2023.3 buildavx2
+cp -a libostree-2023.4 buildavx2
 popd
 
 %build
@@ -171,7 +171,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685579574
+export SOURCE_DATE_EPOCH=1687301201
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -208,7 +208,7 @@ export XDG_DATA_DIRS="$HOME/.local/share${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}"
 make %{?_smp_mflags} check || cat ./test-suite.log
 
 %install
-export SOURCE_DATE_EPOCH=1685579574
+export SOURCE_DATE_EPOCH=1687301201
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ostree
 cp %{_builddir}/libostree-%{version}/COPYING %{buildroot}/usr/share/package-licenses/ostree/ba8966e2473a9969bdcab3dc82274c817cfd98a1 || :

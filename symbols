@@ -44,6 +44,7 @@ libostree-1.so.1:LIBOSTREE_2022.4
 libostree-1.so.1:LIBOSTREE_2022.5
 libostree-1.so.1:LIBOSTREE_2022.7
 libostree-1.so.1:LIBOSTREE_2023.1
+libostree-1.so.1:LIBOSTREE_2023.4
 libostree-1.so.1:ostree_async_progress_copy_state
 libostree-1.so.1:ostree_async_progress_finish
 libostree-1.so.1:ostree_async_progress_get
@@ -226,6 +227,7 @@ libostree-1.so.1:ostree_repo_checkout_at_options_set_devino
 libostree-1.so.1:ostree_repo_checkout_gc
 libostree-1.so.1:ostree_repo_checkout_tree
 libostree-1.so.1:ostree_repo_checkout_tree_at
+libostree-1.so.1:ostree_repo_commit_add_composefs_metadata
 libostree-1.so.1:ostree_repo_commit_modifier_get_type
 libostree-1.so.1:ostree_repo_commit_modifier_new
 libostree-1.so.1:ostree_repo_commit_modifier_ref
