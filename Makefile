@@ -1,5 +1,5 @@
 PKG_NAME := ostree
-URL = https://github.com/ostreedev/ostree/releases/download/v2023.5/libostree-2023.5.tar.xz
+URL = https://github.com/ostreedev/ostree/releases/download/v2023.6/libostree-2023.6.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
