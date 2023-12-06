@@ -45,6 +45,7 @@ libostree-1.so.1:LIBOSTREE_2022.5
 libostree-1.so.1:LIBOSTREE_2022.7
 libostree-1.so.1:LIBOSTREE_2023.1
 libostree-1.so.1:LIBOSTREE_2023.4
+libostree-1.so.1:LIBOSTREE_2023.8
 libostree-1.so.1:ostree_async_progress_copy_state
 libostree-1.so.1:ostree_async_progress_finish
 libostree-1.so.1:ostree_async_progress_get
@@ -133,6 +134,7 @@ libostree-1.so.1:ostree_deployment_get_osname
 libostree-1.so.1:ostree_deployment_get_type
 libostree-1.so.1:ostree_deployment_get_unlocked
 libostree-1.so.1:ostree_deployment_hash
+libostree-1.so.1:ostree_deployment_is_finalization_locked
 libostree-1.so.1:ostree_deployment_is_pinned
 libostree-1.so.1:ostree_deployment_is_staged
 libostree-1.so.1:ostree_deployment_new
@@ -449,6 +451,7 @@ libostree-1.so.1:ostree_sign_metadata_key
 libostree-1.so.1:ostree_sign_set_pk
 libostree-1.so.1:ostree_sign_set_sk
 libostree-1.so.1:ostree_sign_summary
+libostree-1.so.1:ostree_sysroot_change_finalization
 libostree-1.so.1:ostree_sysroot_cleanup
 libostree-1.so.1:ostree_sysroot_cleanup_prune_repo
 libostree-1.so.1:ostree_sysroot_deploy_tree
@@ -496,6 +499,7 @@ libostree-1.so.1:ostree_sysroot_stage_tree_with_options
 libostree-1.so.1:ostree_sysroot_try_lock
 libostree-1.so.1:ostree_sysroot_unload
 libostree-1.so.1:ostree_sysroot_unlock
+libostree-1.so.1:ostree_sysroot_update_post_copy
 libostree-1.so.1:ostree_sysroot_upgrader_check_timestamps
 libostree-1.so.1:ostree_sysroot_upgrader_deploy
 libostree-1.so.1:ostree_sysroot_upgrader_dup_origin
