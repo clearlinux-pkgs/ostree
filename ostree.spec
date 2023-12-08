@@ -7,7 +7,7 @@
 #
 Name     : ostree
 Version  : 2023.8
-Release  : 64
+Release  : 65
 URL      : https://github.com/ostreedev/ostree/releases/download/v2023.8/libostree-2023.8.tar.xz
 Source0  : https://github.com/ostreedev/ostree/releases/download/v2023.8/libostree-2023.8.tar.xz
 Summary  : Git for operating system binaries
@@ -173,7 +173,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1701897273
+export SOURCE_DATE_EPOCH=1702043023
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -230,7 +230,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1701897273
+export SOURCE_DATE_EPOCH=1702043023
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ostree
 cp %{_builddir}/libostree-%{version}/COPYING %{buildroot}/usr/share/package-licenses/ostree/ba8966e2473a9969bdcab3dc82274c817cfd98a1 || :
