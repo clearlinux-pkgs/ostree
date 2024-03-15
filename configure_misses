@@ -2,8 +2,6 @@ Configure miss: -fsanitize=thread in CFLAGS
 Configure miss: -fsanitize=thread in CFLAGS
 Configure miss: avahi-client >= 0.6.31 avahi-glib >= 0.6.31
 Configure miss: avahi-client >= 0.6.31 avahi-glib >= 0.6.31
-Configure miss: gcc options needed to detect all undeclared functions
-Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: grub-mkconfig
 Configure miss: grub-mkconfig
 Configure miss: grub2-mkconfig
@@ -14,5 +12,7 @@ Configure miss: libsoup-3.0 >= 3.0.0
 Configure miss: libsoup-3.0 >= 3.0.0
 Configure miss: machine/endian.h
 Configure miss: machine/endian.h
-Configure miss: x86_64-generic-linux-gnu-file
-Configure miss: x86_64-generic-linux-gnu-file
+Configure miss: machine/endian.h presence
+Configure miss: machine/endian.h presence
+Configure miss: machine/endian.h usability
+Configure miss: machine/endian.h usability
