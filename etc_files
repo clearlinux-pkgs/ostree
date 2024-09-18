@@ -1,0 +1,8 @@
+/etc/:
+/etc/grub.d:
+/etc/ostree/remotes.d:
+/etc/ostree:
+15_ostree
+grub.d
+ostree
+remotes.d
